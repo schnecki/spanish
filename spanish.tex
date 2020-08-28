@@ -1,0 +1,240 @@
+
+\documentclass[a4paper,12pt]{article}
+
+\usepackage{fullpage}
+\usepackage{url}
+\usepackage{float}
+\usepackage{comment}
+\usepackage[utf8]{inputenc}
+\usepackage{booktabs}
+\usepackage{imakeidx}
+\usepackage[hidelinks]{hyperref}
+\makeindex[title=Verbs,columns=1]
+
+\newcommand*{\Verb}[2]{\index{\makebox[0.5\textwidth][l]{#1} #2 \hfill cf.}}
+
+
+\newcommand*{\MS}[2][r]{\ifx t#1 \textcolor{blue}{[\textbf{MS:} #2]}
+  \else \begin{center}\textcolor{blue}{\textbf{MS:} #2} \end{center} \fi}
+
+
+\begin{document}
+
+\title{Spanish Grammar}
+\author{Manuel Schneckenreither}
+
+\maketitle
+
+\section{Subjects and Verbs}
+
+
+The key in learning an new language is to understand how to use the verbs. Therefore, we concentrate
+on these. There exist two tracks of verbs in Spanish, those verbs ending in \textbf{-ar} and those
+ending in \textbf{-er} or \textbf{-ir}. For instance, we have
+\textsf{habl\textbf{ar}}\Verb{hablar}{to speak} for \textsf{to speak}, and
+\textsf{com\textbf{er}}\Verb{comer}{to eat} for \textsf{to eat} and
+\textsf{viv\textbf{ir}}\Verb{vivir}{to live} meaning \textsf{to live}\footnote{also see
+  https://www.spanishdict.com/guide/spanish-present-tense-forms}.
+
+\paragraph{Pronouncation.} The pronunciation is easy in Spanish. First there is only \textbf{one
+  single stress} in each word. If there is an apostrophe the corresponding vowel/syllable is
+stressed, otherwise the second to last syllable is stressed. For instance, we have \textbf{hab-lar},
+thus \textbf{hab} is stressed. In Spanish the leading \textbf{h} is not pronounced, thus hablar is
+pronounced as \textbf{ah}-blahr, with the bold part being stressed. Furthermore, the \textbf{v} is
+pronounced as \textbf{b}, and \textbf{ll} as \textbf{j}.
+
+\paragraph{Conjungation.}
+To conjugate -ar verbs, remove the -ar ending and add the corresponding ending of the desired
+subject. For instance with the word \textsf{hablar} (to speak) we get the top part in
+Table~\ref{tbl:conj}.
+
+Note that \textsf{el} is masculine, \textsf{ella} is feminine and \textsf{usted} is formal for you.
+In case of group of peoples we have \textsf{ellos} for groups of man or mixed groups, \textsf{ellas}
+for groups consisting only of woman, and \textsf{ustedes} for taking formally to a group. For -er
+endings, remove the -er ending and add the corresponding subject ending. We use \textsf{comer} (to
+eat) as example, cf.~Table~\ref{tbl:conj}.
+
+And very similar to the -er verbs, are the -ir verbs, where only the nosotros and vosotrs endings
+are different. For \textsf{vivir} (to live) is prented in the bottom part of Table~\ref{tbl:conj}.
+
+
+\begin{table}[t!]
+\centering
+\begin{tabular}{llll}
+  Subject             & ar-Ending & Example (hablar) & Meaning                      \\
+  \toprule
+  yo                  & -o        & yo hablo         & I speak                      \\
+  tú                  & -as       & tú hablas        & you (informal) speak         \\
+  el/ella/usted       & -a        & el habla         & he/she/you (formal) speak(s) \\
+  nosotros            & -amos     & nostros hablamos & we speak                     \\
+  vosotros            & -áis      & vosotros habláis & you (informal) speak         \\
+  ellos/ellas/ustedes & -an       & ellos hablan     & they/they (fem.)/you speak   \\
+  \midrule
+                      &           &                  &                              \\
+  Subject             & er-Ending & Example (comer)  & Meaning                      \\
+  \toprule
+  yo                  & -o        & yo como          & I eat                        \\
+  tú                  & -es       & tú comes         & you eat                      \\
+  el/ella/usted       & -e        & el come          & he/she/you eat(s)            \\
+  nosotros            & -emos     & nostros comemos  & we eat                       \\
+  vosotros            & -éis      & vosotros coméis  & you eat                      \\
+  ellos/ellas/ustedes & -en       & ellos comen      & they/you eat                 \\
+  \midrule
+                      &           &                  &                              \\
+  Subject             & ir-Ending & Example (vivir)  & Meaning                      \\
+  \toprule
+  yo                  & -o        & yo vivo          & I live                       \\
+  tú                  & -es       & tú vives         & you live                     \\
+  el/ella/usted       & -e        & el vive          & he/she/you live(s)           \\
+  nosotros            & -imos     & nostros vivimos  & we live                      \\
+  vosotros            & -ís       & vosotros vivís   & you live                     \\
+  ellos/ellas/ustedes & -en       & ellos viven      & they/you live                \\
+  \bottomrule
+\end{tabular}
+\caption{\label{tbl:conj} Standard rules for the conjugation of verbs to different
+  subjects.\Verb{hablar}{to speak}\Verb{comer}{to eat}\Verb{vivir}{to live}}
+\end{table}
+
+\pagebreak
+
+\section{Stem-Changing and Irregular Verbs}
+
+
+In the present tense some verbs undergo a vowel change stem of the verb, when it is stressed. There
+can be following changes.
+
+\begin{enumerate}
+\item e becomes ie. For instance the word \textsf{querer} (to want) conjugates as follows:
+
+  \begin{table}[H]
+    \centering
+    \begin{tabular}{llll}
+      Subject             & ir-Ending & Example (querer) & Meaning            \\
+      \toprule
+      yo                  & -o        & yo qu\textbf{ie}ro         & I want             \\
+      tú                  & -as       & tú qu\textbf{ie}res        & you want           \\
+      el/ella/usted       & -a        & el qu\textbf{ie}re         & he/she/you want(s) \\
+      nosotros            & -imos     & nostros queremos & we want            \\
+      vosotros            & -ís       & vosotros queréis  & you want           \\
+      ellos/ellas/ustedes & -an       & ellos qu\textbf{ie}ren     & they/you want      \\
+      \bottomrule
+    \end{tabular}
+    \caption{ The verb querer conjugated.\Verb{querer}{to want}}
+  \end{table}
+
+  Here are some common verbs for which \textbf{e} become \textbf{ie}:
+
+
+  \begin{table}[H]
+    \centering
+    \begin{tabular}{llll}
+      Verb        & Meaning             & Example         \\
+      \toprule
+      acertar     & to hit/guess        & yo acierto      \Verb{acertar}{to hit/guess}\\
+      atender     & to attend to        & yo atiendo      \Verb{atender}{to attend to}\\
+      atravesar   & to cross/go through & yo atravieso    \Verb{atravesar}{to cross/go through}\\
+      calentar    & to warm             & yo caliento     \Verb{calentar}{to warm}\\
+      cerrar      & to close            & yo cierro       \Verb{cerrar}{to close}\\
+      comenzar    & to begin            & yo comienzo     \Verb{comenzar}{to begin}\\
+      confesar    & to confess          & yo confieso     \Verb{confesar}{to confess}\\
+      defender    & to defend           & yo defiendo     \Verb{defender}{to defend}\\
+      descender   & to descend          & yo desciendo    \Verb{descender}{to descend}\\
+      despertarse & to wake up          & yo me despierto \Verb{despertarse}{to wake up}\\
+      divertirse  & to have fun         & yo me divierto  \Verb{divertirse}{to have fun}\\
+      empezar     & to begin            & yo empiezo      \Verb{empezar}{to begin}\\
+      encender    & to light/ignite     & yo enciendo     \Verb{encender}{to light/ignite}\\
+      encerrar    & to enclose/lock     & yo encierro     \Verb{encerrar}{to enclose/lock}\\
+      entender    & to understand       & yo entiendo     \Verb{entender}{to understand}\\
+      fregar      & to scrub/wash       & yo friego       \Verb{fregar}{to scrub/wash}\\
+      gobernar    & to govern/rule      & yo gobierno     \Verb{gobernar}{to govern/rule}\\
+      helar       & to freeze           & yo hielo        \Verb{helar}{to freeze}\\
+      mentir      & to lie              & yo miento       \Verb{mentir}{to lie}\\
+      negar       & to deny             & yo niego        \Verb{negar}{to deny}\\
+      nevar       & to snow             & yo nievo        \Verb{nevar}{to snow}\\
+      pensar      & to think            & yo pienso       \Verb{pensar}{to think}\\
+      perder      & to lose             & yo piedo        \Verb{perder}{to lose}\\
+      preferir    & to prefer           & yo prefiero     \Verb{preferir}{to prefer}\\
+      recomendar  & to recommend        & yo recomiendo   \Verb{recomendar}{to recommend}\\
+      remendar    & to mend/patch       & yo remiendo     \Verb{remendar}{to mend/patch}\\
+      sentar(se)  & to sit down         & yo me siento    \Verb{sentar}{to sit down}\\
+      sentir      & to feel             & yo siento       \Verb{sentir}{to feel}\\
+      sugerir     & to suggest          & yo sugiero      \Verb{sugerir}{to suggest}\\
+      tener       & to have             & tú tienes       \Verb{tener}{to have}\\
+      tropezar    & to stumble          & yo tropiezo     \Verb{tropezar}{to stumble}\\
+      venir       & to come             & tú vienes       \Verb{venir}{to come}\\
+      \bottomrule
+    \end{tabular}
+  \caption{Some common verbs for which the last e in the stem becomes ie when conjugated.}
+  \end{table}
+
+
+\item o becomes ue
+
+\item e becomes i
+\item i becomes ie
+\item u becomes ue
+\end{enumerate}
+
+\paragraph{Special Verbs.}
+
+hacer
+tener
+venir
+??
+??
+
+haber?
+
+
+Some verbs do not follow the rules of the previous section, i.e.\@ there are some irregular verbs
+\footnote{https://www.spanishdict.com/guide/spanish-present-tense-forms}.
+
+\begin{itemize}
+\item \textsf{Verbs ending in -guir:} The \textsf{yo} form ends in \textsf{go}, e.g.\@ extinguir (to
+  extinguish)\Verb{extinguir}{to extinguish} is \textsf{yo extingo}.
+\item
+\end{itemize}
+
+
+\section{Moods in Spanish}
+
+There exist three \textbf{moods} in
+Spanish\footnote{https://www.spanishdict.com/guide/subjunctive-vs-indicative-in-spanish}:
+
+\begin{itemize}
+\item \textbf{Indicative mood:} to talk about facts or things that are believed to be true and
+  concrete.
+\item \textbf{Subjunctive mood:} to talk about desired, doubts, wishes, conjectures, and
+  possibilities.
+\item \textbf{Imperative mood:} for giving commands.
+\end{itemize}
+
+
+\section{Tenses}
+
+There exist present, past and future tenses in Spanish as well:
+
+
+\subsection{Present}
+
+\begin{itemize}
+\item Simple Present TEnse:
+\end{itemize}
+
+
+\appendix
+
+\section{Verbs}
+
+% \indexprologue{\small In this index you’ll find only famous people’s names}
+% \printindex[persons] % Output the 'persons' index
+\printindex % Output the 'persons' index
+
+
+\end{document}
+
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:

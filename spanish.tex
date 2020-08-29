@@ -8,6 +8,7 @@
 \usepackage[utf8]{inputenc}
 \usepackage{booktabs}
 \usepackage{imakeidx}
+\usepackage{xcolor}
 \usepackage[hidelinks]{hyperref}
 \makeindex[title=Verbs,columns=1]
 
@@ -43,7 +44,7 @@ we have \textsf{habl\textbf{ar}}\Verb{hablar}{to speak} for \textsf{to speak}, a
   https://www.spanishdict.com/guide/spanish-present-tense-forms}.
 
 \paragraph{Pronunciation.} The pronunciation is easy in Spanish as words are pronounced as they are
-written but there is only \textbf{one single stress} in each word. If there is an apostrophe the
+written but there can only \textbf{one single stress} in each word. If there is an apostrophe the
 corresponding vowel/syllable is stressed, otherwise the second to last syllable is stressed. For
 instance, we have \textbf{hab-lar}, thus \textbf{hab} is stressed. In Spanish the leading \textbf{h}
 is not pronounced, thus hablar is pronounced as \textbf{ah}-blahr, with the bold part being
@@ -142,7 +143,7 @@ syllable is stressed and always only one syllable of each word is stressed in Sp
 following changes.
 
 \begin{enumerate}
-\item e becomes ie. For instance the word \textsf{querer} (to want) conjugates as follows:
+\item \textbf{e becomes ie}. For instance the word \textsf{querer} (to want) conjugates as follows:
 
   \begin{table}[H]
     \centering
@@ -163,7 +164,6 @@ following changes.
   Here are some common verbs for which \textbf{e} become \textbf{ie}, note that these follow the
   same pattern as querer in Table~\ref{tbl:querer}:
 
-
   \begin{table}[H]
     \centering
     \begin{tabular}{llll}
@@ -181,7 +181,7 @@ following changes.
       despertarse & to wake up          & yo me despierto \Verb{despertarse}{to wake up}        \\
       divertirse  & to have fun         & yo me divierto  \Verb{divertirse}{to have fun}        \\
       empezar     & to begin            & yo empiezo      \Verb{empezar}{to begin}              \\
-      encender    & to light/ignite     & yo enciendo     \Verb{encender}{to light/ignite}      \\
+      encender    & to light/turn on    & yo enciendo     \Verb{encender}{to light/turn on}     \\
       encerrar    & to enclose/lock     & yo encierro     \Verb{encerrar}{to enclose/lock}      \\
       entender    & to understand       & yo entiendo     \Verb{entender}{to understand}        \\
       fregar      & to scrub/wash       & yo friego       \Verb{fregar}{to scrub/wash}          \\
@@ -193,7 +193,7 @@ following changes.
       pensar      & to think            & yo pienso       \Verb{pensar}{to think}               \\
       perder      & to lose             & yo piedo        \Verb{perder}{to lose}                \\
       preferir    & to prefer           & yo prefiero     \Verb{preferir}{to prefer}            \\
-      querer      & to want             & yo quiero  \Verb{querer}{to want}                     \\
+      querer      & to want             & yo quiero       \Verb{querer}{to want}                \\
       recomendar  & to recommend        & yo recomiendo   \Verb{recomendar}{to recommend}       \\
       remendar    & to mend/patch       & yo remiendo     \Verb{remendar}{to mend/patch}        \\
       sentar(se)  & to sit down         & yo me siento    \Verb{sentar}{to sit down}            \\
@@ -205,14 +205,82 @@ following changes.
       \bottomrule
     \end{tabular}
   \caption{Some common verbs for which the last e in the stem becomes ie when conjugated.}
+\end{table}
+\vfill
+  \pagebreak
+
+
+\item \textbf{o becomes ue}. For example the word \textsf{soñar} (to dream) conjugates as follows:
+
+  \begin{table}[H]
+    \centering
+    \begin{tabular}{llll}
+      Subject             & ir-Ending & Example (soñar)       & Meaning             \\
+      \toprule
+      yo                  & -o        & yo s\textbf{ue}ño     & I dream             \\
+      tú                  & -as       & tú s\textbf{ue}ñas    & you dream           \\
+      el/ella/usted       & -a        & el s\textbf{ue}ña     & he/she/you dream(s) \\
+      nosotros            & -amos     & nostros sonamos       & we deam             \\
+      vosotros            & -áis      & vosotros soñáis       & you dream           \\
+      ellos/ellas/ustedes & -an       & ellos s\textbf{ue}ñan & they/you dream      \\
+      \bottomrule
+    \end{tabular}
+    \caption{\label{tbl:sonar} The verb sonar conjugated.\Verb{sonar}{to dream}}
   \end{table}
 
+  \begin{table}[H]
+    \centering
+    \begin{tabular}{llll}
+      Verb           & Meaning              & Example                                                 \\
+      \toprule
+      absolver       & to absolve           & yo absuelo       \Verb{absolver}{to absolve}            \\
+      acordarse (de) & to agree on/remember & yo me acuerdo de \Verb{acordarse de}{to agree on/remember}          \\
+      almorzar       & to have lunch        & yo almuerzo      \Verb{almorzar}{to have lunch}         \\
+      aprobar        & to approve           & yo apruebo       \Verb{aprobar}{to approve}             \\
+      cocer          & to boil/bake         & yo cueco         \Verb{cocer}{to boil/bake}             \\
+      colgar         & to hang (up)         & yo cuelgo        \Verb{colgar}{to hang (up)}            \\
+      conmover       & to move              & yo conmuevo      \Verb{conmover}{to move}               \\
+      contar         & to count             & yo cuento        \Verb{contar}{to count}                \\
+      costar         & to cost              & yo cuesto        \Verb{costar}{to cost}                 \\
+      demoler        & to demolish          & yo demuelo       \Verb{demoler}{to demolish}            \\
+      demostrar      & to demonstrate/prove	& yo demuestro     \Verb{demostrar}{to demonstrate/prove} \\
+      devolver       & to return            & yo devuelvo      \Verb{devolver}{to return}             \\
+      disolver       & to dissolve          & yo disuelvo      \Verb{disolver}{to dissolve}           \\
+      doler          & to hurt              & yo duelo         \Verb{doler}{to hurt}                  \\
+      dormir         & to sleep             & yo duermo        \Verb{dormir}{to sleep}                \\
+      encontrar      & to find              & yo encuentro     \Verb{encontrar}{to find}              \\
+      envolver       & to wrap              & yo envuelvo      \Verb{envolver}{to wrap}               \\
+      llover         & to rain              & yo lluevo        \Verb{llover}{to rain}                 \\
+      moler          & to grind             & yo muelo         \Verb{moler}{to grind}                 \\
+      morder         & to bite              & yo muerdo        \Verb{morder}{to bite}                 \\
+      morir          & to die               & yo muero         \Verb{morir}{to die}                   \\
+      mostrar        & to show              & yo muestro       \Verb{mostrar}{to show}                \\
+      mover          & to move              & yo muevo         \Verb{mover}{to move}                  \\
+      poder          & to be able to        & yo puedo         \Verb{poder}{to be able to}            \\
+      probar         & to taste, to prove   & yo pruebo        \Verb{probar}{to taste, to prove}      \\
+      promover       & to promote           & yo promuevo      \Verb{promover}{to promote}            \\
+      recordar       & to remember          & yo recuerdo      \Verb{recordar}{to remember}           \\
+      remover        & to remove            & yo remuevo       \Verb{remover}{to remove}              \\
+      resolver       & to resolve           & yo resuelvo      \Verb{resolver}{to resolve}            \\
+      retorcer       & to twist             & yo retuerto \MS[t]{why -to?}      \Verb{retorcer}{to twist}              \\
+      revolver       & to mix/shake         & yo revuelvo      \Verb{revolver}{to mix/shake}          \\
+      rogar          & to beg               & yo ruego         \Verb{rogar}{to beg}                   \\
+      soler          & to be accustomed to	& yo suelo (means: I usually)         \Verb{soler}{to be accustomed to}      \\
+      sonar          & to sound             & yo sueno         \Verb{sonar}{to sound}                 \\
+      soñar          & to dream             & yo sueño         \Verb{soñar}{to dream}                 \\
+      torcer         & to twist             & yo tuerco        \Verb{torcer}{to twist}                \\
+      tronar         & to thunder           & yo trueno        \Verb{tronar}{to thunder}              \\
+      volar          & to fly               & yo vuelo         \Verb{volar}{to fly}                   \\
+      \bottomrule
+    \end{tabular}
+  \caption{Some common verbs for which the last o in the stem becomes ue when conjugated.}
+\end{table}
+\vfill
+  \pagebreak
 
-\item o becomes ue
-
-\item e becomes i
-\item i becomes ie
-\item u becomes ue
+\item \textbf{e becomes i.}
+\item \textbf{i becomes ie.}
+\item \textbf{u becomes ue.}
 \end{enumerate}
 
 

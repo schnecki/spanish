@@ -14,10 +14,12 @@
 \makeindex[name=Verbs,title=Verbs,columns=1]
 \makeindex[name=Nouns,title=Nouns,columns=1]
 \makeindex[name=Pronouns,title=Pronouns,columns=1]
+\makeindex[name=Phrases,title=Phrases,columns=1]
 
 \newcommand*{\Verb}[2]{\index[Verbs]{\makebox[0.5\textwidth][l]{#1} #2 \hfill cf.}}
 \newcommand*{\Noun}[2]{\index[Nouns]{\makebox[0.5\textwidth][l]{#1} #2 \hfill cf.}}
 \newcommand*{\Pronoun}[2]{\index[Pronouns]{\makebox[0.5\textwidth][l]{#1} #2 \hfill cf.}}
+\newcommand*{\Phrase}[2]{\index[Phrases]{\makebox[0.5\textwidth][l]{#1} #2 \hfill cf.}}
 
 
 \newcommand*{\MS}[2][r]{\ifx t#1 \textcolor{blue}{[\textbf{MS:} #2]}
@@ -575,7 +577,7 @@ Spanish\footnote{\url{https://www.spanishdict.com/guide/subjunctive-vs-indicativ
           \begin{tabular}{lllll}
             Verb    & Tu form                     & Pronouns                          & Example                      & Meaning                         \\
             \toprule
-            traer   & traes\Verb{traer}{to bring} & lo (it)\Pronoun{lo}(it)           & Traelo.                      & Bring it.                       \\
+            traer   & traes\Verb{traer}{to bring} & lo (it)\Pronoun{lo}{it}           & Traelo.                      & Bring it.                       \\
             traer   & traes                       & me (me)\Pronoun{me}{me}, lo (it)  & Tráemelo.                    & Bring it to me.                 \\
             decir   & dices                       & lo (it)                           & Dígalo. (or dilo)            & Say it.                         \\
             decir   & dices                       & se (him/her)\Pronoun{se}{him/her}, lo (it) & Dígaselo.                    & Say it to her.                  \\
@@ -638,6 +640,22 @@ There exist present, past and future tenses in Spanish as well:
 
 \end{itemize}
 
+\section{Nouns}
+
+\Noun{la oreja}{the ear}
+\Noun{el ojo}{the eye}
+
+
+\section{Phrases}
+
+\Phrase{una forma de aprender}{one way of learning}
+\Phrase{no sé qué pasará más adelante}{I don't know what will happen later}
+\Phrase{no pasa nada}{no problem}
+\Phrase{pues}{well}
+\Phrase{encontes me entiendes}{Then you understand me}
+\Phrase{o si no}{or otherwise (lit: or if not)}
+\Phrase{for example}{por ejemplo}
+
 
 \appendix
 
@@ -649,6 +667,8 @@ There exist present, past and future tenses in Spanish as well:
 \printindex[Nouns]
 
 \printindex[Pronouns]
+
+\printindex[Phrases]
 
 \end{document}
 

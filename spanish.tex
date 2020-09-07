@@ -7,12 +7,17 @@
 \usepackage{comment}
 \usepackage[utf8]{inputenc}
 \usepackage{booktabs}
-\usepackage{imakeidx}
+\usepackage[splitindex]{imakeidx}
 \usepackage{xcolor}
 \usepackage[hidelinks]{hyperref}
-\makeindex[title=Verbs,columns=1]
+% \makeindex[title=Verbs,columns=1]
+\makeindex[name=Verbs,title=Verbs,columns=1]
+\makeindex[name=Nouns,title=Nouns,columns=1]
+\makeindex[name=Pronouns,title=Pronouns,columns=1]
 
-\newcommand*{\Verb}[2]{\index{\makebox[0.5\textwidth][l]{#1} #2 \hfill cf.}}
+\newcommand*{\Verb}[2]{\index[Verbs]{\makebox[0.5\textwidth][l]{#1} #2 \hfill cf.}}
+\newcommand*{\Noun}[2]{\index[Nouns]{\makebox[0.5\textwidth][l]{#1} #2 \hfill cf.}}
+\newcommand*{\Pronoun}[2]{\index[Pronouns]{\makebox[0.5\textwidth][l]{#1} #2 \hfill cf.}}
 
 
 \newcommand*{\MS}[2][r]{\ifx t#1 \textcolor{blue}{[\textbf{MS:} #2]}
@@ -523,22 +528,102 @@ are\footnote{https://www.spanishdict.com/guide/spanish-irregular-present-tense}:
 \caption{\label{tbl:} Very common irregular verbs.}
 \end{table}
 
+
 \pagebreak[4]
+
+
+\section{Pronouns}
+
+In the positive infinite form pronouns are attached in the opposite order as in English to the word.
+For instance,
+
 
 \section{Moods in Spanish}
 
 There exist three \textbf{moods} in
 Spanish\footnote{\url{https://www.spanishdict.com/guide/subjunctive-vs-indicative-in-spanish}}:
 
-\begin{itemize}
+\begin{enumerate}
+\item \textbf{Imperative mood:} for giving commands. Remember that we have two tracks of verbs, the
+  -ar track and the -ir/-er track. However, the informal commands are built differently. We start
+  with them.\refer{Imperative Mood, i.e. Commands} Furthermore, in the imperative mode the go-go
+  words turn into ga-ga's! For instance \textsf{digo} (I tell/I say) becomes \textsf{diga} (Tell! or
+  Say!).
+
+  \begin{itemize}
+  \item \textbf{Positive (Affirmative) informal commands on the -ar track:} Use the present tense
+    and drop the -s ending. For instance with the words \textsf{comprar} (to
+    buy)\Verb{comprar}{to buy}, \textsf{aprender} (to learn)\Verb{aprender}{to learn} and
+    \textsf{escribir} (to write)\Verb{escribir}{to write} we have following.
+    \begin{table}[H]
+      \centering
+      \begin{tabular}{lllll}
+        Verb     & Present tense & Tú command & Example                                       & Meaning          \\
+        \toprule
+        comprar  & tu compras    & compra     & Compra la camiseta!                           & Buy the T-shirt! \\
+        aprender & tu aprendes   & aprende    & Aprende español!                              & Learn Spanish!   \\
+        escribir & tu escribes   & escribe    & Escribe el ensayo\Noun{el ensayo}{the essay}! & Write the essay! \\
+        \bottomrule
+      \end{tabular}
+    \end{table}
+
+    \paragraph{Pronoun placement.} The pronouns have to be attached to the verb as it is a positive
+    command and often an accent is used:
+
+        \begin{table}[H]
+          \centering
+          \begin{tabular}{lllll}
+            Verb    & Tu form                     & Pronouns                          & Example                      & Meaning                         \\
+            \toprule
+            traer   & traes\Verb{traer}{to bring} & lo (it)\Pronoun{lo}(it)           & Traelo.                      & Bring it.                       \\
+            traer   & traes                       & me (me)\Pronoun{me}{me}, lo (it)  & Tráemelo.                    & Bring it to me.                 \\
+            decir   & dices                       & lo (it)                           & Dígalo. (or dilo)            & Say it.                         \\
+            decir   & dices                       & se (him/her)\Pronoun{se}{him/her}, lo (it) & Dígaselo.                    & Say it to her.                  \\
+            comprar & compras                     & se (him/her), lo (it)             & Cómpraselo.                  & Buy it for him.                 \\
+            poner   & pones                       & los (them)\Pronoun{los}{them}     & Ponte los  & Put on your  \\
+            & &     & zapatos ¡Póntelos! & shoes. Put them on! \\
+            \bottomrule
+      \end{tabular}
+    \end{table}
+
+
+  \item \textbf{Negative informal commands on the -ar track:} For the negative informal commands, go
+    to the stem word, take the present tense form and switch tracks. That is words ending in -ar
+    become -er and vice versa and of course use a negative word \textsf{no} (not) or
+    \textsf{nunca}(never):
+    %
+    \begin{table}[H]
+      \centering
+      \begin{tabular}{lllll}
+        Verb     & Present tense & Tú command  & Example                 & Meaning                \\
+        \toprule
+        comprar  & tu compr\textbf{a}s    & no compr\textbf{e}s  & No compres la camiseta! & Don't buy \(\ldots\)! \\
+        aprender & tu aprend\textbf{e}s   & no aprend\textbf{a}s & No aprendas español!    & Don't learn \(\ldots\)!   \\
+        escribir & tu escrib\textbf{e}s   & no escrib\textbf{a}s & Nunca escribas el ensayo!  & Never write \(\ldots\)! \\
+        \bottomrule
+      \end{tabular}
+    \end{table}
+
+
+  \item \textbf{Formal commands:}
+
+
+  \item \textbf{Nosotros commands}
+  \item \textbf{Indirect commands}
+
+
+\item \textbf{Informal commands on the -ir/-er track:} Use the present tense and drop the -r ending
+
+
+  \end{itemize}
+
+
 \item \textbf{Indicative mood:} to talk about facts or things that are believed to be true and
   concrete.
 \item \textbf{Subjunctive mood:} to talk about desired, doubts, wishes, conjectures, and
   possibilities.
-\item \textbf{Imperative mood:} for giving commands.
-\end{itemize}
 
-Imperative mode: go-go words turn into ga-ga's!
+\end{enumerate}
 
 
 \section{Tenses}
@@ -558,13 +643,18 @@ There exist present, past and future tenses in Spanish as well:
 
 % \indexprologue{\small In this index you’ll find only famous people’s names}
 % \printindex[persons] % Output the 'persons' index
-\printindex % Output the 'persons' index
+\printindex[Verbs] % Output the 'persons' index
 
+% \pagebreak[4]
+\printindex[Nouns]
+
+\printindex[Pronouns]
 
 \end{document}
 
 
 %%% Local Variables:
+%%% TeX-command-extra-options: "-shell-escape"
 %%% mode: latex
 %%% TeX-master: t
 %%% End:

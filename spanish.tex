@@ -12,11 +12,15 @@
 \usepackage[hidelinks]{hyperref}
 % \makeindex[title=Verbs,columns=1]
 \makeindex[name=Verbs,title=Verbs,columns=1]
+\makeindex[name=Adjectives,title=Adjectives,columns=1]
+\makeindex[name=Adverbs,title=Adverbs,columns=1]
 \makeindex[name=Nouns,title=Nouns,columns=1]
 \makeindex[name=Pronouns,title=Pronouns,columns=1]
 \makeindex[name=Phrases,title=Phrases,columns=1]
 
 \newcommand*{\Verb}[2]{\index[Verbs]{\makebox[0.5\textwidth][l]{#1} #2 \hfill cf.}}
+\newcommand*{\Adjective}[2]{\index[Adjectives]{\makebox[0.5\textwidth][l]{#1} #2 \hfill cf.}}
+\newcommand*{\Adverb}[2]{\index[Adverbs]{\makebox[0.5\textwidth][l]{#1} #2 \hfill cf.}}
 \newcommand*{\Noun}[2]{\index[Nouns]{\makebox[0.5\textwidth][l]{#1} #2 \hfill cf.}}
 \newcommand*{\Pronoun}[2]{\index[Pronouns]{\makebox[0.5\textwidth][l]{#1} #2 \hfill cf.}}
 \newcommand*{\Phrase}[2]{\index[Phrases]{\makebox[0.5\textwidth][l]{#1} #2 \hfill cf.}}
@@ -630,24 +634,46 @@ Spanish\footnote{\url{https://www.spanishdict.com/guide/subjunctive-vs-indicativ
 
 \section{Tenses}
 
-There exist present, past and future tenses in Spanish as well:
-
+There exist present, past and future tenses in Spanish:
 
 \subsection{Present}
+
+
+\subsection{Future}
+
+\subsection{Past}
+
 
 \begin{itemize}
 \item Simple Present Tense:
 
 \end{itemize}
 
-\section{Nouns}
+\section{Additional Verbs}
+
+\Verb{despertar}{to wake up}
+
+\section{Additional Nouns}
 
 \Noun{la oreja}{the ear}
 \Noun{el ojo}{the eye}
+\Noun{la voz}{the voice}
+\Noun{la diferencia}{the difference}
+
+\section{Adjectives}
+
+\Adjective{amarga}{bitter}
+
+\section{Adverbs}
+
+\Adverb{probable}{probably}
+\Adverb{probablemente}{probably}
 
 
 \section{Phrases}
 
+\Phrase{buenas noches}{good night}
+\Phrase{hasta mañana}{See you tomorrow (lit: until tomorrow)}
 \Phrase{una forma de aprender}{one way of learning}
 \Phrase{no sé qué pasará más adelante}{I don't know what will happen later}
 \Phrase{no pasa nada}{no problem}
@@ -655,7 +681,14 @@ There exist present, past and future tenses in Spanish as well:
 \Phrase{encontes me entiendes}{Then you understand me}
 \Phrase{o si no}{or otherwise (lit: or if not)}
 \Phrase{for example}{por ejemplo}
-
+\Phrase{No se explicarlo.}{I don't know how to explain.}
+\Phrase{Es como}{it is like}
+\Phrase{¿en serio?}{really?}
+\Phrase{Me encanta tu forma de ser}{I love the way you are}
+\Phrase{justo como pense}{just as I thought}
+\Phrase{Ya se verá}{We will see}
+\Phrase{quiero averiguar}{I want to find out}
+\Phrase{No pidas perdón}{Do not say sorry}
 
 \appendix
 
@@ -665,6 +698,10 @@ There exist present, past and future tenses in Spanish as well:
 
 % \pagebreak[4]
 \printindex[Nouns]
+
+\printindex[Adjectives]
+
+\printindex[Adverbs]
 
 \printindex[Pronouns]
 

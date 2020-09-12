@@ -16,6 +16,7 @@
 \makeindex[name=Adverbs,title=Adverbs,columns=1]
 \makeindex[name=Nouns,title=Nouns,columns=1]
 \makeindex[name=Pronouns,title=Pronouns,columns=1]
+\makeindex[name=Prepositions,title=Prepositions,columns=1]
 \makeindex[name=Phrases,title=Phrases,columns=1]
 
 \newcommand*{\Verb}[2]{\index[Verbs]{\makebox[0.5\textwidth][l]{#1} #2 \hfill cf.}}
@@ -23,7 +24,8 @@
 \newcommand*{\Adverb}[2]{\index[Adverbs]{\makebox[0.5\textwidth][l]{#1} #2 \hfill cf.}}
 \newcommand*{\Noun}[2]{\index[Nouns]{\makebox[0.5\textwidth][l]{#1} #2 \hfill cf.}}
 \newcommand*{\Pronoun}[2]{\index[Pronouns]{\makebox[0.5\textwidth][l]{#1} #2 \hfill cf.}}
-\newcommand*{\Phrase}[2]{\index[Phrases]{\makebox[0.5\textwidth][l]{#1} #2 \hfill cf.}}
+\newcommand*{\Preposition}[2]{\index[Prepositions]{\makebox[0.5\textwidth][l]{#1} #2 \hfill cf.}}
+\newcommand*{\Phrase}[2]{#1\footnote{#2} \index[Phrases]{\makebox[0.5\textwidth][l]{#1} #2 \hfill cf.}}
 
 
 \newcommand*{\MS}[2][r]{\ifx t#1 \textcolor{blue}{[\textbf{MS:} #2]}
@@ -612,8 +614,6 @@ Spanish\footnote{\url{https://www.spanishdict.com/guide/subjunctive-vs-indicativ
 
 
   \item \textbf{Formal commands:}
-
-
   \item \textbf{Nosotros commands}
   \item \textbf{Indirect commands}
 
@@ -636,72 +636,166 @@ Spanish\footnote{\url{https://www.spanishdict.com/guide/subjunctive-vs-indicativ
 
 There exist present, past and future tenses in Spanish:
 
-\subsection{Present}
+\subsection{El tiempo presente (The Present Tense)}
+
+\paragraph{Simple Present Tense.} That is actually what we have been using all the time up to this
+point. You can use it to talk about
+\begin{enumerate}
+\item Habitual Actions: %
+  \Phrase{Me levanto a las seis y media cada mañana.}{I get up at six thirty every morning.} %
+\item Things happening now: %
+  \Phrase{¿Cómo estas?}{How are you?} %
+  \Phrase{¿Qué haces?}{What are you doing?} %
+  \Phrase{Estoy bien, gracias.}{I am fine, thanks.} %
+  \Phrase{Limpio la cocina.}{I clean the kitchen. (I am cleaning the kitchen.)} %
+  %
+  \Adverb{Cómo}{How} %
+  \Adverb{Qué}{What} %
+  \Adverb{bien}{fine/well/okay} %
+  \Noun{la cocina}{the kitchen} %
+  \Noun{gracias}{thank you} %
+  \Verb{hacer}{to do} %
+  \Verb{estar}{to be} %
+  \Verb{to clean}{limpiar} %
+\item Timeless events/universal truths:  %
+  \Phrase{Uno más uno son dos}{One plus one is two.} %
+  \Phrase{El hombre es mortal.}{Mankind is mortal.} %
+  %
+  \Noun{el hombre}{mankind} %
+  \Adjective{mortal}{mortal} %
+\item Hypothetical situations: %
+  \Phrase{Si llega Marcos, salgo.}{If Marcos comes, I am out.} %
+  \Phrase{Si llueve, la fiesta termina.}{If it rains, the party is over.} %
+  %
+  \Verb{llegar}{to come} %
+  \Verb{salir}{to leave} %
+  \Verb{llover}{to rain} %
+  \Verb{terminar}{to finish} %
+  \Noun{la fiest}{the party} %
+\item Lapses of time by using \textit{hace + [time period] + que + [present tense verb]}: %
+  \Phrase{Hace tres años que esperamos tu llamada.}{We have been waiting three years for your
+    call.} %
+  %
+  \Verb{esperar}{to wait} %
+  \Noun{la llamada}{the call} %
+  \Noun{el año}{the year} %
+\item Ordering something in a restaurant: %
+  \Phrase{Me trae un café, por favor.}{Would you bring me a coffee please?} %
+  \Phrase{Quiero el arroz con pollo.}{I would like the chicken and rice.} %
+  %
+  \Verb{traer}{to bring} %
+  \Verb{querer}{to want} %
+  \Preposition{con}{with} %
+  \Noun{por favor}{please} %
+  \Noun{café}{coffee} %
+  \Noun{pollo}{chicken} %
+  \Noun{arroz}{rice} %
+
+\end{enumerate}
 
 
 \subsection{Future}
 
+\begin{itemize}
+\item Will:
+\item Would:
+\item Going to: \Phrase{Voy al parque. ¿Vienes?}{I am going to the park. Do you want to come?}
+\end{itemize}
+
 \subsection{Past}
 
 
-\begin{itemize}
-\item Simple Present Tense:
-
-\end{itemize}
-
 \section{Additional Verbs}
 
-\Verb{despertar}{to wake up}%
+\
+\newline \Verb{despertar}{to wake up}%
 
 
+\pagebreak[4]
 \section{Additional Nouns}
 
-\Noun{la oreja}{the ear}%
-\Noun{el ojo}{the eye}%
-\Noun{la voz}{the voice}%
-\Noun{la diferencia}{the difference}%
+\
+\newline \Noun{la oreja}{the ear}\newline%
+\newline \Noun{el ojo}{the eye}\newline%
+\newline \Noun{la voz}{the voice}\newline%
+\newline \Noun{la diferencia}{the difference}\newline%
 
+
+\pagebreak[4]
 \section{Adjectives}
 
-\Adjective{amarga}{bitter}%
+\
+\newline \Adjective{amarga}{bitter}\newline%
 
+
+\pagebreak[4]
 \section{Adverbs}
 
-\Adverb{probable}{probably}%
-\Adverb{probablemente}{probably}%
+\
+\newline \Adverb{probable}{probably}\newline%
+\newline \Adverb{probablemente}{probably}\newline%
 
 
+\pagebreak[4]
 \section{Phrases}
 
-\Phrase{Es como}{it is like}%
-\Phrase{Luego te cuento}{I will tell you later}%
-\Phrase{Te cuento}{I will tell you}%
-\Phrase{Me encanta tu forma de ser}{I love the way you are}%
-\Phrase{No pidas perdón}{Do not say sorry}%
-\Phrase{pero creo que si}{But I think so/I belive yes}
-\Phrase{Bueno ya veremos}{We will see}
-\Phrase{no es tu culpa}{it is not your fault}
-\Phrase{para explicar}{to explain}
-\Phrase{me da igual}{I don't care}
-\Phrase{me ha gustado hablar contigo}{I have enjoyed talking to you}
-\Phrase{de todos modos}{anyhow}
-\Phrase{No se explicarlo.}{I don't know how to explain.}%
-\Phrase{Tengo muchas ganas}{I really want to}%
-\Phrase{Ya se verá}{We will see}%
-\Phrase{buenas noches}{good night}%
-\Phrase{encontes me entiendes}{Then you understand me}%
-\Phrase{for example}{por ejemplo}%
-\Phrase{hasta mañana}{See you tomorrow (lit: until tomorrow)}%
-\Phrase{justo como pense}{just as I thought}%
-\Phrase{no pasa nada}{no problem}%
-\Phrase{no sé qué pasará más adelante}{I don't know what will happen later}%
-\Phrase{o si no}{or otherwise (lit: or if not)}%
-\Phrase{pues}{well}%
-\Phrase{quiero averiguar}{I want to find out}%
-\Phrase{una forma de aprender}{one way of learning}%
-\Phrase{¿en serio?}{really?}%
+\
+\newline \Phrase{Es como}{it is like}%
+\newline \Phrase{Luego te cuento}{I will tell you later}%
+\newline \Phrase{Te cuento}{I will tell you}%
+\newline \Phrase{Me encanta tu forma de ser}{I love the way you are}%
+\newline \Phrase{No pidas perdón}{Do not say sorry}%
+\newline \Phrase{pero creo que si}{But I think so/I belive yes}%
+\newline \Phrase{Bueno ya veremos}{We will see}%
+\newline \Phrase{no es tu culpa}{it is not your fault}%
+\newline \Phrase{para explicar}{to explain}%
+\newline \Phrase{me da igual}{I don't care}%
+\newline \Phrase{me ha gustado hablar contigo}{I have enjoyed talking to you}%
+\newline \Phrase{de todos modos}{anyhow}%
+\newline \Phrase{No se explicarlo.}{I don't know how to explain.}%
+\newline \Phrase{Tengo muchas ganas}{I really want to}%
+\newline \Phrase{Ya se verá}{We will see}%
+\newline \Phrase{buenas noches}{good night}%
+\newline \Phrase{encontes me entiendes}{Then you understand me}%
+\newline \Phrase{for example}{por ejemplo}%
+\newline \Phrase{hasta mañana}{See you tomorrow (lit: until tomorrow)}%
+\newline \Phrase{justo como pense}{just as I thought}%
+\newline \Phrase{no pasa nada}{no problem}%
+\newline \Phrase{no sé qué pasará más adelante}{I don't know what will happen later}%
+\newline \Phrase{o si no}{or otherwise (lit: or if not)}%
+\newline \Phrase{pues}{well}%
+\newline \Phrase{quiero averiguar}{I want to find out}%
+\newline \Phrase{una forma de aprender}{one way of learning}%
+\newline \Phrase{¿en serio?}{really?}%
+\newline \Phrase{Qué te gusta hacer?}{What do you like to do?}%
+\newline \Phrase{Oye una pregunta}{Hey, I got a question}%
 
+\pagebreak[4]
 \appendix
+
+In the sequel we list some important and often used words and phrases. We cover following types of
+words:
+
+\begin{itemize}
+\item Verbs (los verbos) \Noun{los verbos}{the verbs}
+\item Nouns (los substantivos) \Noun{los substantivos}{the nouns}
+\item Adjective (los adjectivos) \Nouns{los adjectivos}{the adjectives}
+\item \textbf{Adverbs} are used to modify or describe verbs, adjectives, or other adverbs. An adverb
+  can give information about time, place, manner, or number and answer questions such
+  as\footnote{https://www.spanishdict.com/guide/spanish-adverbs}:
+  \begin{itemize}
+  \item How?
+  \item How long?
+  \item How often?
+  \item When?
+  \item Where?
+  \end{itemize}
+\item Pronouns (los pronombres) \Noun{los pronombres}{the pronouns}
+\item Prepositions (las preposiciónes) \Noun{las preposiciónes}{the prepositions}
+\end{itemize}
+
+\pagebreak[4]
+
 
 % \indexprologue{\small In this index you’ll find only famous people’s names}
 % \printindex[persons] % Output the 'persons' index
@@ -715,6 +809,8 @@ There exist present, past and future tenses in Spanish:
 \printindex[Adverbs]
 
 \printindex[Pronouns]
+
+\printindex[Prepositions]
 
 \printindex[Phrases]
 

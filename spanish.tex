@@ -19,13 +19,23 @@
 \makeindex[name=Prepositions,title=Prepositions,columns=1]
 \makeindex[name=Phrases,title=Phrases,columns=1]
 
-\newcommand*{\Verb}[2]{\index[Verbs]{\makebox[0.5\textwidth][l]{#1} #2 \hfill cf.}}
-\newcommand*{\Adjective}[2]{\index[Adjectives]{\makebox[0.5\textwidth][l]{#1} #2 \hfill cf.}}
-\newcommand*{\Adverb}[2]{\index[Adverbs]{\makebox[0.5\textwidth][l]{#1} #2 \hfill cf.}}
-\newcommand*{\Noun}[2]{\index[Nouns]{\makebox[0.5\textwidth][l]{#1} #2 \hfill cf.}}
-\newcommand*{\Pronoun}[2]{\index[Pronouns]{\makebox[0.5\textwidth][l]{#1} #2 \hfill cf.}}
-\newcommand*{\Preposition}[2]{\index[Prepositions]{\makebox[0.5\textwidth][l]{#1} #2 \hfill cf.}}
-\newcommand*{\Phrase}[2]{#1\footnote{#2} \index[Phrases]{\makebox[0.5\textwidth][l]{#1} #2 \hfill cf.}}
+% Commands
+\newcommand*{\Verb}[2]{\textsf{#1} (#2)\index[Verbs]{\makebox[0.5\textwidth][l]{#1} #2 \hfill cf.}}
+\newcommand*{\Adjective}[2]{\textsf{#1} (#2)\index[Adjectives]{\makebox[0.5\textwidth][l]{#1} #2 \hfill cf.}}
+\newcommand*{\Adverb}[2]{\textsf{#1} (#2)\index[Adverbs]{\makebox[0.5\textwidth][l]{#1} #2 \hfill cf.}}
+\newcommand*{\Noun}[2]{\textsf{#1} (#2)\index[Nouns]{\makebox[0.5\textwidth][l]{#1} #2 \hfill cf.}}
+\newcommand*{\Pronoun}[2]{\textsf{#1} (#2)\index[Pronouns]{\makebox[0.5\textwidth][l]{#1} #2 \hfill cf.}}
+\newcommand*{\Preposition}[2]{\textsf{#1} (#2)\index[Prepositions]{\makebox[0.5\textwidth][l]{#1} #2 \hfill cf.}}
+\newcommand*{\Phrase}[2]{\textsf{#1}\footnote{#2} \index[Phrases]{\makebox[0.5\textwidth][l]{#1} #2 \hfill cf.}}
+
+% Silent commands
+\newcommand*{\VerbS}[2]{\index[Verbs]{\makebox[0.5\textwidth][l]{#1} #2 \hfill cf.}}
+\newcommand*{\AdjectiveS}[2]{\index[Adjectives]{\makebox[0.5\textwidth][l]{#1} #2 \hfill cf.}}
+\newcommand*{\AdverbS}[2]{\index[Adverbs]{\makebox[0.5\textwidth][l]{#1} #2 \hfill cf.}}
+\newcommand*{\NounS}[2]{\index[Nouns]{\makebox[0.5\textwidth][l]{#1} #2 \hfill cf.}}
+\newcommand*{\PronounS}[2]{\index[Pronouns]{\makebox[0.5\textwidth][l]{#1} #2 \hfill cf.}}
+\newcommand*{\PrepositionS}[2]{\index[Prepositions]{\makebox[0.5\textwidth][l]{#1} #2 \hfill cf.}}
+\newcommand*{\PhraseS}[2]{\index[Phrases]{\makebox[0.5\textwidth][l]{#1} #2 \hfill cf.}}
 
 
 \newcommand*{\MS}[2][r]{\ifx t#1 \textcolor{blue}{[\textbf{MS:} #2]}
@@ -51,9 +61,9 @@
 The key in learning an new language is to understand how to use the verbs. Therefore, we concentrate
 on these. There exist two tracks of verbs in Spanish, those verbs ending in
 \textbf{-ar}\refer{tracks of verbs} and those ending in \textbf{-er} or \textbf{-ir}. For instance,
-we have \textsf{habl\textbf{ar}}\Verb{hablar}{to speak} for \textsf{to speak}, and
-\textsf{com\textbf{er}}\Verb{comer}{to eat} for \textsf{to eat} and
-\textsf{viv\textbf{ir}}\Verb{vivir}{to live} meaning \textsf{to live}\footnote{also see
+we have \textsf{habl\textbf{ar}}\VerbS{hablar}{to speak} for \textsf{to speak}, and
+\textsf{com\textbf{er}}\VerbS{comer}{to eat} for \textsf{to eat} and
+\textsf{viv\textbf{ir}}\VerbS{vivir}{to live} meaning \textsf{to live}\footnote{also see
   \url{https://www.spanishdict.com/guide/spanish-present-tense-forms}}.
 
 \paragraph{Pronunciation.} The pronunciation is easy in Spanish as words are pronounced as they are
@@ -61,21 +71,24 @@ written but there can only \textbf{one single stress} in each word. If there is 
 corresponding vowel/syllable is stressed, otherwise the second to last syllable is stressed. For
 instance, we have \textbf{hab-lar}, thus \textbf{hab} is stressed. In Spanish the leading \textbf{h}
 is not pronounced, thus hablar is pronounced as \textbf{ah}-blahr, with the bold part being
-stressed. Furthermore, the \textbf{v} is pronounced as \textbf{b}, and \textbf{ll} as \textbf{j}.
+stressed. All vowel sounds, even unstressed, have to come out clearly and always pronounced the
+same: a, e like in let, i, o like in obey, u like in food.
+%
+Furthermore, the \textbf{v} is pronounced as \textbf{b}, and \textbf{ll} as \textbf{j}.
 
 \paragraph{Present Tense Conjungation.}
 To conjugate -ar verbs, remove the -ar ending and add the corresponding ending of the desired
-subject. For instance with the word \textsf{hablar} (to speak) we get the top part in
+subject. For instance with the word \Verb{hablar}{to speak} we get the top part in
 Table~\ref{tbl:conj}.
 
 Note that \textsf{el} is masculine, \textsf{ella} is feminine and \textsf{usted} is formal for you.
 In case of group of peoples we have \textsf{ellos} for groups of man or mixed groups, \textsf{ellas}
 for groups consisting only of woman, and \textsf{ustedes} for taking formally to a group. For -er
-endings, remove the -er ending and add the corresponding subject ending. We use \textsf{comer} (to
-eat) as example, cf.~Table~\ref{tbl:conj}.
+endings, remove the -er ending and add the corresponding subject ending. We use \Verb{comer}{to eat}
+as example, cf.~Table~\ref{tbl:conj}.
 
 And very similar to the -er verbs, are the -ir verbs, where only the nosotros and vosotrs endings
-are different. For \textsf{vivir} (to live) is presented in the bottom part of Table~\ref{tbl:conj}.
+are different. For \Verb{vivir}{to live} is presented in the bottom part of Table~\ref{tbl:conj}.
 
 
 \MS[t]{Pronouns + in the infinite form the pronoun? is adapted to the word. levantarse. levantarme, yo me
@@ -118,8 +131,21 @@ are different. For \textsf{vivir} (to live) is presented in the bottom part of T
   \bottomrule
 \end{tabular}
 \caption{\label{tbl:conj} Standard rules for the conjugation of verbs to different
-  subjects.\Verb{hablar}{to speak}\Verb{comer}{to eat}\Verb{vivir}{to live}}
+  subjects.\VerbS{hablar}{to speak}\VerbS{comer}{to eat}\VerbS{vivir}{to live}}
 \end{table}
+
+
+% There are only 4 exceptions where you don't surface on -o in the whole Spanish language: soy
+% (ser), estoy (estar), voy (ir), doy (dar). And then there is one o at all: (se) saber
+
+
+% \begin{tabular}{llll}
+%   Subject             & Verb & Example (hablar) & Meaning                      \\
+%   \toprule
+%   yo                  & ser        & soy         & I am                      \\
+%   yo                  & estar        & estoy         & I am                      \\
+%   yo                  & -as       & tú hablas        & you (informal) speak         \\
+
 
 \pagebreak
 \pagebreak
@@ -145,14 +171,13 @@ This of course also means that they important to know. These are:
     venir      & to come         & yo ven\textbf{g}o   & I come    \\
     \bottomrule
   \end{tabular}
-  \caption{Irregular verbs.\Verb{hacer}{to do}}
+  \caption{Irregular verbs.\VerbS{hacer}{to do}}
 \end{table}
 
 We call these words the \textbf{go-go words}\refer{go-go words} as the end in -go. Additionally to
 these words other words ending in -poner fall into the same category. There is one more word that is
-different, but not a go-go word: haber (to have)\Verb{haber}{to have}. As \textsf{tener} it also
-means \textsf{to have}, but it is used when talking about the past. We will investigate this in
-detail later.
+different, but not a go-go word: \Verb{haber}{to have}. As \textsf{tener} it also means \textsf{to
+  have}, but it is used when talking about the past. We will investigate this in detail later.
 
 \paragraph{Spelling Changes.} Some verbs do not follow the rules of the previous section, i.e.\@
 there is a spelling change in the yo form
@@ -160,10 +185,10 @@ there is a spelling change in the yo form
 
 \begin{itemize}
 \item \textbf{Verbs ending in -guir the yo form ends in go.} The \textsf{yo} form ends in
-  \textsf{go}, e.g.\@ extinguir (to extinguish)\Verb{extinguir}{to extinguish} is \textsf{yo
+  \textsf{go}, e.g.\@ \Verb{extinguir}{to extinguish} is \textsf{yo
     extingo}.
 \item \textbf{Verbs ending in -ger or -gir, the g in the yo form changes to a j.} For instance
-  dirigir (to direct)\Verb{direct}{to direct} we get `yo dirijo' for `I direct'.
+  \Verb{direct}{to direct} we get `yo dirijo' for `I direct'.
 \end{itemize}
 
 Here are some common verbs that use these two rules:
@@ -173,11 +198,11 @@ Here are some common verbs that use these two rules:
   \begin{tabular}{llll}
     Infinitive & Meaning       & yo form                                 \\
     \toprule
-    extinguir  & to extinguish & extingo \Verb{extinguir}{to extinguish} \\
-    dirigir    & to direct     & dirijo \Verb{dirigir}{to direct}        \\
-    escoger    & to choose     & escojo \Verb{escoger}{to choose}        \\
-    exigir     & to demand     & exijo \Verb{exigir}{to demand}          \\
-    recoger    & to pick up    & recojo \Verb{recoger}{to pick up}       \\
+    extinguir  & to extinguish & extingo \VerbS{extinguir}{to extinguish} \\
+    dirigir    & to direct     & dirijo \VerbS{dirigir}{to direct}        \\
+    escoger    & to choose     & escojo \VerbS{escoger}{to choose}        \\
+    exigir     & to demand     & exijo \VerbS{exigir}{to demand}          \\
+    recoger    & to pick up    & recojo \VerbS{recoger}{to pick up}       \\
     \bottomrule
   \end{tabular}
   \caption{\label{tbl:guir} Verbs with -guir, -ger and -gir ending have different yo forms.}
@@ -205,7 +230,7 @@ following changes.
       ellos/ellas/ustedes & -en       & ellos qu\textbf{ie}ren & they/you want      \\
       \bottomrule
     \end{tabular}
-    \caption{\label{tbl:querer} The verb querer conjugated.\Verb{querer}{to want}}
+    \caption{\label{tbl:querer} The verb querer conjugated.\VerbS{querer}{to want}}
   \end{table}
 
   Here are some common verbs for which \textbf{e} become \textbf{ie}, note that these follow the
@@ -216,39 +241,39 @@ following changes.
     \begin{tabular}{llll}
       Verb        & Meaning             & Example                                               \\
       \toprule
-      acertar     & to hit/guess        & yo acierto      \Verb{acertar}{to hit/guess}          \\
-      atender     & to attend to        & yo atiendo      \Verb{atender}{to attend to}          \\
-      atravesar   & to cross/go through & yo atravieso    \Verb{atravesar}{to cross/go through} \\
-      calentar    & to warm             & yo caliento     \Verb{calentar}{to warm}              \\
-      cerrar      & to close            & yo cierro       \Verb{cerrar}{to close}               \\
-      comenzar    & to begin            & yo comienzo     \Verb{comenzar}{to begin}             \\
-      confesar    & to confess          & yo confieso     \Verb{confesar}{to confess}           \\
-      defender    & to defend           & yo defiendo     \Verb{defender}{to defend}            \\
-      descender   & to descend          & yo desciendo    \Verb{descender}{to descend}          \\
-      despertarse & to wake up          & yo me despierto \Verb{despertarse}{to wake up}        \\
-      divertirse  & to have fun         & yo me divierto  \Verb{divertirse}{to have fun}        \\
-      empezar     & to begin            & yo empiezo      \Verb{empezar}{to begin}              \\
-      encender    & to light/turn on    & yo enciendo     \Verb{encender}{to light/turn on}     \\
-      encerrar    & to enclose/lock     & yo encierro     \Verb{encerrar}{to enclose/lock}      \\
-      entender    & to understand       & yo entiendo     \Verb{entender}{to understand}        \\
-      fregar      & to scrub/wash       & yo friego       \Verb{fregar}{to scrub/wash}          \\
-      gobernar    & to govern/rule      & yo gobierno     \Verb{gobernar}{to govern/rule}       \\
-      helar       & to freeze           & yo hielo        \Verb{helar}{to freeze}               \\
-      mentir      & to lie              & yo miento       \Verb{mentir}{to lie}                 \\
-      negar       & to deny             & yo niego        \Verb{negar}{to deny}                 \\
-      nevar       & to snow             & yo nievo        \Verb{nevar}{to snow}                 \\
-      pensar      & to think            & yo pienso       \Verb{pensar}{to think}               \\
-      perder      & to lose             & yo piedo        \Verb{perder}{to lose}                \\
-      preferir    & to prefer           & yo prefiero     \Verb{preferir}{to prefer}            \\
-      querer      & to want             & yo quiero       \Verb{querer}{to want}                \\
-      recomendar  & to recommend        & yo recomiendo   \Verb{recomendar}{to recommend}       \\
-      remendar    & to mend/patch       & yo remiendo     \Verb{remendar}{to mend/patch}        \\
-      sentar(se)  & to sit down         & yo me siento    \Verb{sentar}{to sit down}            \\
-      sentir      & to feel             & yo siento       \Verb{sentir}{to feel}                \\
-      sugerir     & to suggest          & yo sugiero      \Verb{sugerir}{to suggest}            \\
-      tener       & to have             & tú tienes       \Verb{tener}{to have}                 \\
-      tropezar    & to stumble          & yo tropiezo     \Verb{tropezar}{to stumble}           \\
-      venir       & to come             & tú vienes       \Verb{venir}{to come}                 \\
+      acertar     & to hit/guess        & yo acierto      \VerbS{acertar}{to hit/guess}          \\
+      atender     & to attend to        & yo atiendo      \VerbS{atender}{to attend to}          \\
+      atravesar   & to cross/go through & yo atravieso    \VerbS{atravesar}{to cross/go through} \\
+      calentar    & to warm             & yo caliento     \VerbS{calentar}{to warm}              \\
+      cerrar      & to close            & yo cierro       \VerbS{cerrar}{to close}               \\
+      comenzar    & to begin            & yo comienzo     \VerbS{comenzar}{to begin}             \\
+      confesar    & to confess          & yo confieso     \VerbS{confesar}{to confess}           \\
+      defender    & to defend           & yo defiendo     \VerbS{defender}{to defend}            \\
+      descender   & to descend          & yo desciendo    \VerbS{descender}{to descend}          \\
+      despertarse & to wake up          & yo me despierto \VerbS{despertarse}{to wake up}        \\
+      divertirse  & to have fun         & yo me divierto  \VerbS{divertirse}{to have fun}        \\
+      empezar     & to begin            & yo empiezo      \VerbS{empezar}{to begin}              \\
+      encender    & to light/turn on    & yo enciendo     \VerbS{encender}{to light/turn on}     \\
+      encerrar    & to enclose/lock     & yo encierro     \VerbS{encerrar}{to enclose/lock}      \\
+      entender    & to understand       & yo entiendo     \VerbS{entender}{to understand}        \\
+      fregar      & to scrub/wash       & yo friego       \VerbS{fregar}{to scrub/wash}          \\
+      gobernar    & to govern/rule      & yo gobierno     \VerbS{gobernar}{to govern/rule}       \\
+      helar       & to freeze           & yo hielo        \VerbS{helar}{to freeze}               \\
+      mentir      & to lie              & yo miento       \VerbS{mentir}{to lie}                 \\
+      negar       & to deny             & yo niego        \VerbS{negar}{to deny}                 \\
+      nevar       & to snow             & yo nievo        \VerbS{nevar}{to snow}                 \\
+      pensar      & to think            & yo pienso       \VerbS{pensar}{to think}               \\
+      perder      & to lose             & yo piedo        \VerbS{perder}{to lose}                \\
+      preferir    & to prefer           & yo prefiero     \VerbS{preferir}{to prefer}            \\
+      querer      & to want             & yo quiero       \VerbS{querer}{to want}                \\
+      recomendar  & to recommend        & yo recomiendo   \VerbS{recomendar}{to recommend}       \\
+      remendar    & to mend/patch       & yo remiendo     \VerbS{remendar}{to mend/patch}        \\
+      sentar(se)  & to sit down         & yo me siento    \VerbS{sentar}{to sit down}            \\
+      sentir      & to feel             & yo siento       \VerbS{sentir}{to feel}                \\
+      sugerir     & to suggest          & yo sugiero      \VerbS{sugerir}{to suggest}            \\
+      tener       & to have             & tú tienes       \VerbS{tener}{to have}                 \\
+      tropezar    & to stumble          & yo tropiezo     \VerbS{tropezar}{to stumble}           \\
+      venir       & to come             & tú vienes       \VerbS{venir}{to come}                 \\
       \bottomrule
     \end{tabular}
   \caption{Some common verbs for which the last e in the stem becomes ie when conjugated.}
@@ -272,7 +297,7 @@ following changes.
       ellos/ellas/ustedes & -an       & ellos s\textbf{ue}ñan & they/you dream      \\
       \bottomrule
     \end{tabular}
-    \caption{\label{tbl:sonar} The verb sonar conjugated.\Verb{sonar}{to dream}}
+    \caption{\label{tbl:sonar} The verb sonar conjugated.\VerbS{sonar}{to dream}}
   \end{table}
 
   Another one is the word \textsf{oler} (to smell), for which also an h is added at the beginning
@@ -291,7 +316,7 @@ following changes.
       ellos/ellas/ustedes & -en       & ellos \textbf{hue}len & they/you smell      \\
       \bottomrule
     \end{tabular}
-    \caption{\label{tbl:oler} The verb oler conjugated.\Verb{oler}{to smell}}
+    \caption{\label{tbl:oler} The verb oler conjugated.\VerbS{oler}{to smell}}
   \end{table}
 
   Below again you can find common verbs with this vowel change.
@@ -301,54 +326,53 @@ following changes.
     \begin{tabular}{llll}
       Verb           & Meaning              & Example                                                               \\
       \toprule
-      absolver       & to absolve           & yo absuelo       \Verb{absolver}{to absolve}                          \\
-      acordarse (de) & to agree on/remember & yo me acuerdo de \Verb{acordarse de}{to agree on/remember}            \\
-      almorzar       & to have lunch        & yo almuerzo      \Verb{almorzar}{to have lunch}                       \\
-      aprobar        & to approve           & yo apruebo       \Verb{aprobar}{to approve}                           \\
-      cocer          & to boil/bake         & yo cueco         \Verb{cocer}{to boil/bake}                           \\
-      colgar         & to hang (up)         & yo cuelgo        \Verb{colgar}{to hang (up)}                          \\
-      conmover       & to move              & yo conmuevo      \Verb{conmover}{to move}                             \\
-      contar         & to count             & yo cuento        \Verb{contar}{to count}                              \\
-      costar         & to cost              & yo cuesto        \Verb{costar}{to cost}                               \\
-      demoler        & to demolish          & yo demuelo       \Verb{demoler}{to demolish}                          \\
-      demostrar      & to demonstrate/prove	& yo demuestro     \Verb{demostrar}{to demonstrate/prove}               \\
-      devolver       & to return            & yo devuelvo      \Verb{devolver}{to return}                           \\
-      disolver       & to dissolve          & yo disuelvo      \Verb{disolver}{to dissolve}                         \\
-      doler          & to hurt              & yo duelo         \Verb{doler}{to hurt}                                \\
-      dormir         & to sleep             & yo duermo        \Verb{dormir}{to sleep}                              \\
-      encontrar      & to find              & yo encuentro     \Verb{encontrar}{to find}                            \\
-      envolver       & to wrap              & yo envuelvo      \Verb{envolver}{to wrap}                             \\
-      llover         & to rain              & yo lluevo        \Verb{llover}{to rain}                               \\
-      moler          & to grind             & yo muelo         \Verb{moler}{to grind}                               \\
-      morder         & to bite              & yo muerdo        \Verb{morder}{to bite}                               \\
-      morir          & to die               & yo muero         \Verb{morir}{to die}                                 \\
-      mostrar        & to show              & yo muestro       \Verb{mostrar}{to show}                              \\
-      mover          & to move              & yo muevo         \Verb{mover}{to move}                                \\
-      oler           & to smell             & yo huelo \Verb{oler}{to smell}                                        \\
-      poder          & to be able to        & yo puedo         \Verb{poder}{to be able to}                          \\
-      probar         & to taste, to prove   & yo pruebo        \Verb{probar}{to taste, to prove}                    \\
-      promover       & to promote           & yo promuevo      \Verb{promover}{to promote}                          \\
-      recordar       & to remember          & yo recuerdo      \Verb{recordar}{to remember}                         \\
-      remover        & to remove            & yo remuevo       \Verb{remover}{to remove}                            \\
-      resolver       & to resolve           & yo resuelvo      \Verb{resolver}{to resolve}                          \\
-      retorcer       & to twist             & yo retuerto \MS[t]{why -to?}      \Verb{retorcer}{to twist}           \\
-      revolver       & to mix/shake         & yo revuelvo      \Verb{revolver}{to mix/shake}                        \\
-      rogar          & to beg               & yo ruego         \Verb{rogar}{to beg}                                 \\
-      soler          & to be accustomed to	& yo suelo (means: I usually)         \Verb{soler}{to be accustomed to} \\
-      sonar          & to sound             & yo sueno         \Verb{sonar}{to sound}                               \\
-      soñar          & to dream             & yo sueño         \Verb{soñar}{to dream}                               \\
-      torcer         & to twist             & yo tuerco        \Verb{torcer}{to twist}                              \\
-      tronar         & to thunder           & yo trueno        \Verb{tronar}{to thunder}                            \\
-      volar          & to fly               & yo vuelo         \Verb{volar}{to fly}                                 \\
+      absolver       & to absolve           & yo absuelo       \VerbS{absolver}{to absolve}                          \\
+      acordarse (de) & to agree on/remember & yo me acuerdo de \VerbS{acordarse de}{to agree on/remember}            \\
+      almorzar       & to have lunch        & yo almuerzo      \VerbS{almorzar}{to have lunch}                       \\
+      aprobar        & to approve           & yo apruebo       \VerbS{aprobar}{to approve}                           \\
+      cocer          & to boil/bake         & yo cueco         \VerbS{cocer}{to boil/bake}                           \\
+      colgar         & to hang (up)         & yo cuelgo        \VerbS{colgar}{to hang (up)}                          \\
+      conmover       & to move              & yo conmuevo      \VerbS{conmover}{to move}                             \\
+      contar         & to count             & yo cuento        \VerbS{contar}{to count}                              \\
+      costar         & to cost              & yo cuesto        \VerbS{costar}{to cost}                               \\
+      demoler        & to demolish          & yo demuelo       \VerbS{demoler}{to demolish}                          \\
+      demostrar      & to demonstrate/prove	& yo demuestro     \VerbS{demostrar}{to demonstrate/prove}               \\
+      devolver       & to return            & yo devuelvo      \VerbS{devolver}{to return}                           \\
+      disolver       & to dissolve          & yo disuelvo      \VerbS{disolver}{to dissolve}                         \\
+      doler          & to hurt              & yo duelo         \VerbS{doler}{to hurt}                                \\
+      dormir         & to sleep             & yo duermo        \VerbS{dormir}{to sleep}                              \\
+      encontrar      & to find              & yo encuentro     \VerbS{encontrar}{to find}                            \\
+      envolver       & to wrap              & yo envuelvo      \VerbS{envolver}{to wrap}                             \\
+      llover         & to rain              & yo lluevo        \VerbS{llover}{to rain}                               \\
+      moler          & to grind             & yo muelo         \VerbS{moler}{to grind}                               \\
+      morder         & to bite              & yo muerdo        \VerbS{morder}{to bite}                               \\
+      morir          & to die               & yo muero         \VerbS{morir}{to die}                                 \\
+      mostrar        & to show              & yo muestro       \VerbS{mostrar}{to show}                              \\
+      mover          & to move              & yo muevo         \VerbS{mover}{to move}                                \\
+      oler           & to smell             & yo huelo \VerbS{oler}{to smell}                                        \\
+      poder          & to be able to        & yo puedo         \VerbS{poder}{to be able to}                          \\
+      probar         & to taste, to prove   & yo pruebo        \VerbS{probar}{to taste, to prove}                    \\
+      promover       & to promote           & yo promuevo      \VerbS{promover}{to promote}                          \\
+      recordar       & to remember          & yo recuerdo      \VerbS{recordar}{to remember}                         \\
+      remover        & to remove            & yo remuevo       \VerbS{remover}{to remove}                            \\
+      resolver       & to resolve           & yo resuelvo      \VerbS{resolver}{to resolve}                          \\
+      retorcer       & to twist             & yo retuerto \MS[t]{why -to?}      \VerbS{retorcer}{to twist}           \\
+      revolver       & to mix/shake         & yo revuelvo      \VerbS{revolver}{to mix/shake}                        \\
+      rogar          & to beg               & yo ruego         \VerbS{rogar}{to beg}                                 \\
+      soler          & to be accustomed to	& yo suelo (means: I usually)         \VerbS{soler}{to be accustomed to} \\
+      sonar          & to sound             & yo sueno         \VerbS{sonar}{to sound}                               \\
+      soñar          & to dream             & yo sueño         \VerbS{soñar}{to dream}                               \\
+      torcer         & to twist             & yo tuerco        \VerbS{torcer}{to twist}                              \\
+      tronar         & to thunder           & yo trueno        \VerbS{tronar}{to thunder}                            \\
+      volar          & to fly               & yo vuelo         \VerbS{volar}{to fly}                                 \\
       \bottomrule
     \end{tabular}
   \caption{Some common verbs for which the o in the stem becomes ue when conjugated.}
 \end{table}
 
 Again for all of these and the following vowel changes prefixes count as well. For instance the
-words \textsf{comprobar} (to check/prove)\Verb{comprobar}{to check/prove}, \textsf{descontar} (to
-deduct/exclude)\Verb{descontar}{to deduct/exclude} and \textsf{descolgar} (to take
-down)\Verb{descolgar}{to take down} undergo a vowel change as well.
+words \Verb{comprobar}{to check/prove}, \Verb{descontar}{to deduct/exclude} and
+\Verb{descolgar}{to take down} undergo a vowel change as well.
 
 \vfill
 \pagebreak
@@ -368,7 +392,7 @@ down)\Verb{descolgar}{to take down} undergo a vowel change as well.
       ellos/ellas/ustedes & -en       & ellos rep\textbf{i}ten & they/you repeat      \\
       \bottomrule
     \end{tabular}
-    \caption{\label{tbl:repetir} The verb repetir conjugated.\Verb{repetir}{to repeat}}
+    \caption{\label{tbl:repetir} The verb repetir conjugated.\VerbS{repetir}{to repeat}}
   \end{table}
 
   There are only a few common words with that scheme:
@@ -378,21 +402,21 @@ down)\Verb{descolgar}{to take down} undergo a vowel change as well.
     \begin{tabular}{llll}
       Verb      & Meaning                           & Example                                                         \\
       \toprule
-      conseguir & to get                            & yo consigo   \Verb{conseguir}{to get}                           \\
-      corregir  & to correct                        & yo corrijo   \Verb{corregir}{to correct}                        \\
-      decir     & to say/tell                       & yo digo      \Verb{decir}{to say/tell}                          \\
-      despedir  & to fire/to say goodbye/to dismiss & yo despido   \Verb{despedir}{to fire/to say goodbye/to dismiss} \\
-      elegir    & to elect                          & yo elijo     \Verb{elegir}{to elect}                            \\
-      impedir   & to impede/prevent                 & yo impido    \Verb{impedir}{to impede/prevent}                  \\
-      medir     & to measure                        & yo mido      \Verb{medir}{to measure}                           \\
-      pedir     & to ask for                        & yo pido      \Verb{pedir}{to ask for}                           \\
-      perseguir & to follow/chase                   & yo persigo   \Verb{perseguir}{to follow/chase}                  \\
-      repetir   & to repeat                         & yo repito    \Verb{repetir}{to repeat}                          \\
-      reírse    & to laugh                          & yo me río    \Verb{reírse}{to laugh}                            \\
-      seguir    & to follow                         & yo sigo      \Verb{seguir}{to follow}                           \\
-      servir    & to serve                          & yo sirvo     \Verb{servir}{to serve}                            \\
-      sonreírse & to smile at                       & yo me sonrío (to smile at me) \Verb{sonreírse}{to smile at}     \\
-      vestirse  & to get dressed                    & yo me visto  \Verb{vestirse}{to get dressed}                    \\
+      conseguir & to get                            & yo consigo   \VerbS{conseguir}{to get}                           \\
+      corregir  & to correct                        & yo corrijo   \VerbS{corregir}{to correct}                        \\
+      decir     & to say/tell                       & yo digo      \VerbS{decir}{to say/tell}                          \\
+      despedir  & to fire/to say goodbye/to dismiss & yo despido   \VerbS{despedir}{to fire/to say goodbye/to dismiss} \\
+      elegir    & to elect                          & yo elijo     \VerbS{elegir}{to elect}                            \\
+      impedir   & to impede/prevent                 & yo impido    \VerbS{impedir}{to impede/prevent}                  \\
+      medir     & to measure                        & yo mido      \VerbS{medir}{to measure}                           \\
+      pedir     & to ask for                        & yo pido      \VerbS{pedir}{to ask for}                           \\
+      perseguir & to follow/chase                   & yo persigo   \VerbS{perseguir}{to follow/chase}                  \\
+      repetir   & to repeat                         & yo repito    \VerbS{repetir}{to repeat}                          \\
+      reírse    & to laugh                          & yo me río    \VerbS{reírse}{to laugh}                            \\
+      seguir    & to follow                         & yo sigo      \VerbS{seguir}{to follow}                           \\
+      servir    & to serve                          & yo sirvo     \VerbS{servir}{to serve}                            \\
+      sonreírse & to smile at                       & yo me sonrío (to smile at me) \VerbS{sonreírse}{to smile at}     \\
+      vestirse  & to get dressed                    & yo me visto  \VerbS{vestirse}{to get dressed}                    \\
       \bottomrule
     \end{tabular}
     \caption{Some common verbs for which e becomes i in the stem when conjugated.}
@@ -401,8 +425,7 @@ down)\Verb{descolgar}{to take down} undergo a vowel change as well.
 \pagebreak
 
 \item \textbf{i becomes ie.} There exist only two commonly used verbs with this vocal change:
-  \textsf{adquirir} (to acquire)\Verb{adquirir}{to acquire} and \textsf{inquirir} (to
-  inquire)\Verb{inquirir}{to inquire}.
+  \Verb{adquirir}{to acquire} and \Verb{inquirir}{to inquire}.
 
   \begin{table}[H]
     \centering
@@ -413,11 +436,11 @@ down)\Verb{descolgar}{to take down} undergo a vowel change as well.
       tú                  & -es       & tú adqu\textbf{ie}res    & You  acquire          \\
       el/ella/usted       & -e        & el adqu\textbf{ie}re     & he/she/you acquire(s) \\
       nosotros            & -imos     & nostros adquirimos       & we acquire            \\
-      vosotros            & -ís      & vosotros adquirís        & you acquire           \\
+      vosotros            & -ís      & vosotros adquirís        & you acquire            \\
       ellos/ellas/ustedes & -en       & ellos adqu\textbf{ie}ren & they/you acquire      \\
       \bottomrule
     \end{tabular}
-    \caption{\label{tbl:adquirir} The verb adquirir conjugated.\Verb{adquirir}{to acquire}}
+    \caption{\label{tbl:adquirir} The verb adquirir conjugated.\VerbS{adquirir}{to acquire}}
   \end{table}
 
   \begin{table}[H]
@@ -433,11 +456,11 @@ down)\Verb{descolgar}{to take down} undergo a vowel change as well.
       ellos/ellas/ustedes & -en       & ellos inqu\textbf{ie}ren & they/you inquire      \\
       \bottomrule
     \end{tabular}
-    \caption{\label{tbl:inquirir} The verb inquirir conjugated.\Verb{inquirir}{to inquire}}
+    \caption{\label{tbl:inquirir} The verb inquirir conjugated.\VerbS{inquirir}{to inquire}}
   \end{table}
 
 \item \textbf{u becomes ue.} Finally for this vowel change, there is only one commonly used verb:
-  \textsf{jugar} (to play)\Verb{jugar}{to play}.
+  \Verb{jugar}{to play}.
 
   \begin{table}[H]
     \centering
@@ -452,7 +475,7 @@ down)\Verb{descolgar}{to take down} undergo a vowel change as well.
       ellos/ellas/ustedes & -an       & ellos j\textbf{ue}gan & they/you play      \\
       \bottomrule
     \end{tabular}
-    \caption{\label{tbl:jugar} The verb jugar conjugated.\Verb{jugar}{to play}}
+    \caption{\label{tbl:jugar} The verb jugar conjugated.\VerbS{jugar}{to play}}
   \end{table}
 \end{enumerate}
 
@@ -467,26 +490,25 @@ tense):
   \begin{tabular}{llll}
     Infinitive & Meaning            & yo form                                \\
     \toprule
-    caber          & to fit             & quepo \Verb{caber}{to fit}             \\
-    caer           & to fall            & caigo \Verb{caer}{to fall}             \\
-    conocer        & to know            & conozco \Verb{conocer}{to know}        \\
-    dar            & to give            & doy \Verb{dar}{to give}                \\
-    hacer          & to do/make         & hago \Verb{hacer}{to do/make}          \\
-    poner          & to put             & pongo \Verb{poner}{to put}             \\
-    saber          & to know            & sé \Verb{saber}{to know}               \\
-    salir          & to leave/to go out & salgo \Verb{salir}{to leave/to go out} \\
-    traducir       & to translate       & traduzco \Verb{traducir}{to translate} \\
-    traer          & to bring           & traigo \Verb{traer}{to bring}          \\
-    valer          & to be worth        & valgo \Verb{valer}{to be worth}        \\
-    ver            & to see             & veo \Verb{ver}{to see}                 \\
+    caber          & to fit             & quepo \VerbS{caber}{to fit}             \\
+    caer           & to fall            & caigo \VerbS{caer}{to fall}             \\
+    conocer        & to know            & conozco \VerbS{conocer}{to know}        \\
+    dar            & to give            & doy \VerbS{dar}{to give}                \\
+    hacer          & to do/make         & hago \VerbS{hacer}{to do/make}          \\
+    poner          & to put             & pongo \VerbS{poner}{to put}             \\
+    saber          & to know            & sé \VerbS{saber}{to know}               \\
+    salir          & to leave/to go out & salgo \VerbS{salir}{to leave/to go out} \\
+    traducir       & to translate       & traduzco \VerbS{traducir}{to translate} \\
+    traer          & to bring           & traigo \VerbS{traer}{to bring}          \\
+    valer          & to be worth        & valgo \VerbS{valer}{to be worth}        \\
+    ver            & to see             & veo \VerbS{ver}{to see}                 \\
     \bottomrule
   \end{tabular}
   \caption{\label{tbl:irregular} Verbs with irregular yo forms.}
 \end{table}
 
-Furthermore there are four of the most common verbs that are irregular. These are \textsf{ser} (to
-be)\Verb{ser}{to be}, \textsf{estar} (to be), \textsf{ir} (to go) \Verb{ir}{to go} and
-\textsf{haber} (to have) \Verb{haber}{to have}. The corresponding conjugations
+Furthermore there are four of the most common verbs that are irregular. These are \Verb{ser}{to be},
+\Verb{estar}{to be}, \Verb{ir}{to go} and \Verb{haber}{to have}. The corresponding conjugations
 are\footnote{https://www.spanishdict.com/guide/spanish-irregular-present-tense}:
 
 
@@ -560,9 +582,8 @@ Spanish\footnote{\url{https://www.spanishdict.com/guide/subjunctive-vs-indicativ
 
   \begin{itemize}
   \item \textbf{Positive (Affirmative) informal commands on the -ar track:} Use the present tense
-    and drop the -s ending. For instance with the words \textsf{comprar} (to
-    buy)\Verb{comprar}{to buy}, \textsf{aprender} (to learn)\Verb{aprender}{to learn} and
-    \textsf{escribir} (to write)\Verb{escribir}{to write} we have following.
+    and drop the -s ending. For instance with the words \Verb{comprar}{to buy},
+    \Verb{aprender}{to learn} and \Verb{escribir}{to write} we have following.
     \begin{table}[H]
       \centering
       \begin{tabular}{lllll}
@@ -583,7 +604,7 @@ Spanish\footnote{\url{https://www.spanishdict.com/guide/subjunctive-vs-indicativ
           \begin{tabular}{lllll}
             Verb    & Tu form                     & Pronouns                          & Example                      & Meaning                         \\
             \toprule
-            traer   & traes\Verb{traer}{to bring} & lo (it)\Pronoun{lo}{it}           & Traelo.                      & Bring it.                       \\
+            traer   & traes\VerbS{traer}{to bring} & lo (it)\Pronoun{lo}{it}           & Traelo.                      & Bring it.                       \\
             traer   & traes                       & me (me)\Pronoun{me}{me}, lo (it)  & Tráemelo.                    & Bring it to me.                 \\
             decir   & dices                       & lo (it)                           & Dígalo. (or dilo)            & Say it.                         \\
             decir   & dices                       & se (him/her)\Pronoun{se}{him/her}, lo (it) & Dígaselo.                    & Say it to her.                  \\
@@ -638,7 +659,10 @@ There exist present, past and future tenses in Spanish:
 
 \subsection{El tiempo presente (The Present Tense)}
 
-\paragraph{Simple Present Tense.} That is actually what we have been using all the time up to this
+The present tense is signaled by stressing the second to last syllable. This stress signals the
+present tense and the ears tune in on the ending to find out the subject that is talked about.
+
+\subsubsection{Simple Present Tense.} That is actually what we have been using all the time up to this
 point. You can use it to talk about
 \begin{enumerate}
 \item Habitual Actions: %
@@ -649,47 +673,47 @@ point. You can use it to talk about
   \Phrase{Estoy bien, gracias.}{I am fine, thanks.} %
   \Phrase{Limpio la cocina.}{I clean the kitchen. (I am cleaning the kitchen.)} %
   %
-  \Adverb{Cómo}{How} %
-  \Adverb{Qué}{What} %
-  \Adverb{bien}{fine/well/okay} %
-  \Noun{la cocina}{the kitchen} %
-  \Noun{gracias}{thank you} %
-  \Verb{hacer}{to do} %
-  \Verb{estar}{to be} %
-  \Verb{to clean}{limpiar} %
+  \AdverbS{Cómo}{How} %
+  \AdverbS{Qué}{What} %
+  \AdverbS{bien}{fine/well/okay} %
+  \NounS{la cocina}{the kitchen} %
+  \NounS{gracias}{thank you} %
+  \VerbS{hacer}{to do} %
+  \VerbS{estar}{to be} %
+  \VerbS{to clean}{limpiar} %
 \item Timeless events/universal truths:  %
   \Phrase{Uno más uno son dos}{One plus one is two.} %
   \Phrase{El hombre es mortal.}{Mankind is mortal.} %
   %
-  \Noun{el hombre}{mankind} %
-  \Adjective{mortal}{mortal} %
+  \NounS{el hombre}{mankind} %
+  \AdjectiveS{mortal}{mortal} %
 \item Hypothetical situations: %
   \Phrase{Si llega Marcos, salgo.}{If Marcos comes, I am out.} %
   \Phrase{Si llueve, la fiesta termina.}{If it rains, the party is over.} %
   %
-  \Verb{llegar}{to come} %
-  \Verb{salir}{to leave} %
-  \Verb{llover}{to rain} %
-  \Verb{terminar}{to finish} %
-  \Noun{la fiest}{the party} %
+  \VerbS{llegar}{to come} %
+  \VerbS{salir}{to leave} %
+  \VerbS{llover}{to rain} %
+  \VerbS{terminar}{to finish} %
+  \NounS{la fiest}{the party} %
 \item Lapses of time by using \textit{hace + [time period] + que + [present tense verb]}: %
   \Phrase{Hace tres años que esperamos tu llamada.}{We have been waiting three years for your
     call.} %
   %
-  \Verb{esperar}{to wait} %
-  \Noun{la llamada}{the call} %
-  \Noun{el año}{the year} %
+  \VerbS{esperar}{to wait} %
+  \NounS{la llamada}{the call} %
+  \NounS{el año}{the year} %
 \item Ordering something in a restaurant: %
   \Phrase{Me trae un café, por favor.}{Would you bring me a coffee please?} %
   \Phrase{Quiero el arroz con pollo.}{I would like the chicken and rice.} %
   %
-  \Verb{traer}{to bring} %
-  \Verb{querer}{to want} %
-  \Preposition{con}{with} %
-  \Noun{por favor}{please} %
-  \Noun{café}{coffee} %
-  \Noun{pollo}{chicken} %
-  \Noun{arroz}{rice} %
+  \VerbS{traer}{to bring} %
+  \VerbS{querer}{to want} %
+  \PrepositionS{con}{with} %
+  \NounS{por favor}{please} %
+  \NounS{café}{coffee} %
+  \NounS{pollo}{chicken} %
+  \NounS{arroz}{rice} %
 
 \end{enumerate}
 
@@ -702,13 +726,111 @@ point. You can use it to talk about
 \item Going to: \Phrase{Voy al parque. ¿Vienes?}{I am going to the park. Do you want to come?}
 \end{itemize}
 
+
+\pagebreak[4]
 \subsection{Past}
+
+% The past tense is signaled by stressing the second to last syllable. This stress signals the
+% present tense and the ears tune in on the ending to find out the subject that is talked about.
+
+\subsubsection{Simple Past Tense --- Preterite.}
+
+The tense \Noun{el pretérito}{the preterite} is used to talk about actions completed at a point in
+the past, but not for continuous actions like habits that do not have a specific beginning or
+ending. For this the imperfect tense is used.
+
+To use the preterite simple past tense just use different endings for the two tracks. We use the
+same three words as before, \Verb{hablar}{to speak}, \Verb{comer}{to eat} and \Verb{vivir}{to live}.
+Note that the pronunciation is always at the end/after the infinitive.
+
+\begin{table}[H]
+\centering
+\begin{tabular}{llll}
+  Subject             & ar-Ending & Example (hablar)    & Meaning                    \\
+  \toprule
+  yo                  & -é        & yo hablé            & I spoke                    \\
+  tú                  & -aste     & tú hablaste         & you (informal) spoke       \\
+  el/ella/usted       & -ó        & el habló            & he/she/you (formal) spoke  \\
+  nosotros            & -amos     & nostros hablamos    & we spoke                  \\
+  vosotros            & -asteis   & vosotros hablasteis & you (informal) spoke       \\
+  ellos/ellas/ustedes & -aron     & ellos hablaron      & they/they (fem.)/you spoke \\
+  \midrule
+                      &           &                     &                            \\
+  Subject             & er-Ending & Example (comer)     & Meaning                    \\
+  \toprule
+  yo                  & -í        & yo comí             & I ate                      \\
+  tú                  & -iste     & tú comiste          & you ate                    \\
+  el/ella/usted       & -ió       & el comió            & he/she/you ate             \\
+  nosotros            & -imos     & nostros comimos     & we ate                     \\
+  vosotros            & -isteis   & vosotros comisteis  & you ate                    \\
+  ellos/ellas/ustedes & -ieron    & ellos comieron      & they/you ate               \\
+  \midrule
+                      &           &                     &                            \\
+  Subject             & ir-Ending & Example (vivir)     & Meaning                    \\
+  \toprule
+  yo                  & -í        & yo viví             & I lived                    \\
+  tú                  & -iste     & tú viviste          & you lived                  \\
+  el/ella/usted       & -ió       & el vivió            & he/she/you lived           \\
+  nosotros            & -imos     & nostros vivimos     & we lived                   \\
+  vosotros            & -isteis   & vosotros vivisteis  & you lived                  \\
+  ellos/ellas/ustedes & -ieron    & ellos vivieron      & they/you lived             \\
+  \bottomrule
+\end{tabular}
+\caption{\label{tbl:conj} Standard rules for the conjugation of verbs to different
+  subjects.\VerbS{hablar}{to speak}\VerbS{comer}{to eat}\VerbS{vivir}{to live}}
+\end{table}
+
+\pagebreak[4]
+
+\subsubsection{Simple Past Tense --- Imperfect.}
+
+To use the imperfect simple past tense we gain use different endings for the two tracks. Note that
+the pronunciation is again at the end/after the infinitive.
+
+\begin{table}[H]
+\centering
+\begin{tabular}{llll}
+  Subject             & ar-Ending & Example (hablar)   & Meaning                      \\
+  \toprule
+  yo                  & -aba      & yo hablaba         & I was talking                \\
+  tú                  & -abas     & tú hablabas        & you (informal) were speaking \\
+  el/ella/usted       & -aba      & el hablaba         & he/she/you (formal) spoke    \\
+  nosotros            & -ábamos   & nostros hablábamos & we spoke                     \\
+  vosotros            & -abais    & vosotros hablabais & you (informal) spoke         \\
+  ellos/ellas/ustedes & -aban     & ellos hablaban     & they/they (fem.)/you spoke   \\
+  \midrule
+                      &           &                    &                              \\
+  Subject             & er-Ending & Example (comer)    & Meaning                      \\
+  \toprule
+  yo                  & -í        & yo comí            & I ate                        \\
+  tú                  & -iste     & tú comiste         & you ate                      \\
+  el/ella/usted       & -ió       & el comió           & he/she/you ate               \\
+  nosotros            & -imos     & nostros comimos    & we ate                       \\
+  vosotros            & -isteis   & vosotros comisteis & you ate                      \\
+  ellos/ellas/ustedes & -ieron    & ellos comieron     & they/you ate                 \\
+  \midrule
+                      &           &                    &                              \\
+  Subject             & ir-Ending & Example (vivir)    & Meaning                      \\
+  \toprule
+  yo                  & -í        & yo viví            & I lived                      \\
+  tú                  & -iste     & tú viviste         & you lived                    \\
+  el/ella/usted       & -ió       & el vivió           & he/she/you lived             \\
+  nosotros            & -imos     & nostros vivimos    & we lived                     \\
+  vosotros            & -isteis   & vosotros vivisteis & you lived                    \\
+  ellos/ellas/ustedes & -ieron    & ellos vivieron     & they/you lived               \\
+  \bottomrule
+\end{tabular}
+\caption{\label{tbl:conj} Standard rules for the conjugation of verbs to different
+  subjects.\VerbS{hablar}{to speak}\VerbS{comer}{to eat}\VerbS{vivir}{to live}}
+\end{table}
 
 
 \section{Additional Verbs}
 
 \
 \newline \Verb{despertar}{to wake up}%
+\newline \Verb{correr}{to run}%
+\newline \Verb{caminar}{to walk}%
 
 
 \pagebreak[4]

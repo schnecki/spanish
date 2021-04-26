@@ -1,0 +1,54 @@
+iba;I went [pretérito imperfecto];irregular de ir;Explanation
+ibas;you went (tú) [pretérito imperfecto];irregular de ir;Explanation
+iba;he went [pretérito imperfecto];irregular de ir;Explanation
+íbamos;we went [pretérito imperfecto];irregular de ir;Explanation
+ibais;you went (vosotros) [pretérito imperfecto];irregular de ir;Explanation
+iban;they went [pretérito imperfecto];irregular de ir;Explanation
+era;I was [pretérito imperfecto, ser];irregular de ser;Explanation
+eras;you were (tú) [pretérito imperfecto, ser];irregular de ser;Explanation
+era;he was [pretérito imperfecto, ser];irregular de ser;Explanation
+éramos;we were [pretérito imperfecto, ser];irregular de ser;Explanation
+erais;you were (vosotros) [pretérito imperfecto, ser];irregular de ser;Explanation
+eran;they were [pretérito imperfecto, ser];irregular de ser;Explanation
+veía;I saw [pretérito imperfecto];irregular de ver;Explanation
+veías;you saw (tú) [pretérito imperfecto];irregular de ver;Explanation
+veía;he saw [pretérito imperfecto];irregular de ver;Explanation
+veíamos;we saw [pretérito imperfecto];irregular de ver;Explanation
+veíais;you saw (vosotros) [pretérito imperfecto];irregular de ver;Explanation
+veían;they saw [pretérito imperfecto];irregular de ver;Explanation
+hube;I had [pretérito perfecto, haber];irregular con -e de haber;Explanation
+hubiste;you had (tú) [pretérito perfecto, haber];irregular con -iste de haber;Explanation
+hubo;he had [pretérito perfecto, haber];irregular con -o de haber;Explanation
+hubimos;we had [pretérito perfecto, haber];irregular con -imos de haber;Explanation
+hubisteis;you had (vosotros) [pretérito perfecto, haber];irregular con -isteis de haber;Explanation
+hubieron;they had [pretérito perfecto, haber];irregular con -ieron de haber;Explanation
+fui;I was [pretérito perfecto, ser];irregular de ser;Explanation
+fuiste;you were (tú) [pretérito perfecto, ser];irregular de ser;Explanation
+fue;he was [pretérito perfecto, ser];irregular de ser;Explanation
+fuimos;we were [pretérito perfecto, ser];irregular de ser;Explanation
+fuisteis;you were (vosotros) [pretérito perfecto, ser];irregular de ser;Explanation
+fueron;they were [pretérito perfecto, ser];irregular de ser;Explanation
+estuve;I was [pretérito perfecto, estar];irregular con -uve de estar;Explanation
+estuviste;you were (tú) [pretérito perfecto, estar];irregular con -uviste de estar;Explanation
+estuvo;he was [pretérito perfecto, estar];irregular con -uvo de estar;Explanation
+estuvimos;we were [pretérito perfecto, estar];irregular con -uvimos de estar;Explanation
+estuvisteis;you were (vosotros) [pretérito perfecto, estar];irregular con -uvisteis de estar;Explanation
+estuvieron;they were [pretérito perfecto, estar];irregular con -uvieron de estar;Explanation
+fui;I went [pretérito perfecto];irregular de ser;Explanation
+fuiste;you went (tú) [pretérito perfecto];irregular de ser;Explanation
+fue;he went [pretérito perfecto];irregular de ser;Explanation
+fuimos;we went [pretérito perfecto];irregular de ser;Explanation
+fuisteis;you went (vosotros) [pretérito perfecto];irregular de ser;Explanation
+fueron;they went [pretérito perfecto];irregular de ser;Explanation
+di;I gave [pretérito perfecto];irregular de dar;Explanation
+diste;you gave (tú) [pretérito perfecto];irregular de dar;Explanation
+dio;he gave [pretérito perfecto];irregular de dar;Explanation
+dimos;we gave [pretérito perfecto];irregular de dar;Explanation
+disteis;you have (vosotros) [pretérito perfecto];irregular de dar;Explanation
+dieron;they gave [pretérito perfecto];irregular de dar;Explanation
+vi;I saw [pretérito perfecto];irregular de ver;Explanation
+viste;you saw (tú) [pretérito perfecto];irregular de ver;Explanation
+vio;he saw [pretérito perfecto];irregular de ver;Explanation
+vimos;we saw [pretérito perfecto];irregular de ver;Explanation
+visteis;you saw (vosotros) [pretérito perfecto];irregular de ver;Explanation
+vieron;they saw [pretérito perfecto];irregular de ver;Explanation

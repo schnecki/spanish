@@ -1,0 +1,55 @@
+había;I had [pretérito imperfecto, haber];-ía de haber;Explanation
+habías;you had (tú) [pretérito imperfecto, haber];-ías de haber;Explanation
+había;he had [pretérito imperfecto, haber];-ía de haber;Explanation
+habíamos;we had [pretérito imperfecto, haber];-íamos de haber;Explanation
+habíais;you had (vosotros) [pretérito imperfecto, haber];-íais de haber;Explanation
+habían;they had [pretérito imperfecto, haber];-ían de haber;Explanation
+cantaba;I sang [pretérito imperfecto];-aba de cantar;Explanation
+cantabas;you sang (tú) [pretérito imperfecto];-abas de cantar;Explanation
+cantaba;he sang [pretérito imperfecto];-aba de cantar;Explanation
+cantábamos;we sang [pretérito imperfecto];-ábamos de cantar;Explanation
+cantabais;you sang (vosotros) [pretérito imperfecto];-abais de cantar;Explanation
+cantaban;they sang [pretérito imperfecto];-aban de cantar;Explanation
+comía;I ate [pretérito imperfecto];-ía de comer;Explanation
+comías;you ate (tú) [pretérito imperfecto];-ías de comer;Explanation
+comía;he ate [pretérito imperfecto];-ía de comer;Explanation
+comíamos;we ate [pretérito imperfecto];-íamos de comer;Explanation
+comíais;you ate (vosotros) [pretérito imperfecto];-íais de comer;Explanation
+comían;they ate [pretérito imperfecto];-ían de comer;Explanation
+vivía;I lived [pretérito imperfecto];-ía de vivir;Explanation
+vivías;you lived (tú) [pretérito imperfecto];-ías de vivir;Explanation
+vivía;he lived [pretérito imperfecto];-ía de vivir;Explanation
+vivíamos;we lived [pretérito imperfecto];-íamos de vivir;Explanation
+vivíais;you lived (vosotros) [pretérito imperfecto];-íais de vivir;Explanation
+vivían;they lived [pretérito imperfecto];-ían de vivir;Explanation
+estaba;I was [pretérito imperfecto, estar];-aba de estar;Explanation
+estabas;you were (tú) [pretérito imperfecto, estar];-abas de estar;Explanation
+estaba;he was [pretérito imperfecto, estar];-aba de estar;Explanation
+estábamos;we were [pretérito imperfecto, estar];-ábamos de estar;Explanation
+estabais;you were (vosotros) [pretérito imperfecto, estar];-abais de estar;Explanation
+estaban;they were [pretérito imperfecto, estar];-aban de estar;Explanation
+daba;I gave [pretérito imperfecto];-aba de dar;Explanation
+dabas;you gave (tú) [pretérito imperfecto];-abas de dar;Explanation
+daba;he gave [pretérito imperfecto];-aba de dar;Explanation
+dábamos;we gave [pretérito imperfecto];-ábamos de dar;Explanation
+dabais;you gave (vosotros) [pretérito imperfecto];-abais de dar;Explanation
+daban;they gave [pretérito imperfecto];-aban de dar;Explanation
+canté;I sang [pretérito perfecto];-é de cantar;Explanation
+cantaste;you sang (tú) [pretérito perfecto];-aste de cantar;Explanation
+cantó;he sang [pretérito perfecto];-ó de cantar;Explanation
+cantamos;we sang [pretérito perfecto];-amos de cantar;Explanation
+cantasteis;you sang [pretérito perfecto];-asteis de cantar;Explanation
+cantaron;they sang [pretérito perfecto];-aron de cantar;Explanation
+comí;I ate [pretérito perfecto];-í de comer;Explanation
+comiste;you ate (tú) [pretérito perfecto];-iste de comer;Explanation
+comió;he ate [pretérito perfecto];-ió de comer;Explanation
+comimos;we ate [pretérito perfecto];-imos de comer;Explanation
+comisteis;you ate (vosotros) [pretérito perfecto];-isteis de comer;Explanation
+comieron;they ate [pretérito perfecto];-ieron de comer;Explanation
+viví;I lived [pretérito perfecto];-í de vivir;Explanation
+viviste;you lived (tú) [pretérito perfecto];-iste de vivir;Explanation
+vivó;he lived [pretérito perfecto];-ó de vivir;Explanation
+vivimos;we lived [pretérito perfecto];-imos de vivir;Explanation
+vivisteis;you lived (vosotros) [pretérito perfecto];-isteis de vivir;Explanation
+vivieron;they lived [pretérito perfecto];-ieron de vivir;Explanation
+
